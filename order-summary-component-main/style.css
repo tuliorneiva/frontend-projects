@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --color01: hsl(225, 100%, 98%);
+    --color02: rgb(224, 232, 255);
+    --color03: hsl(245, 75%, 52%);
+    --color04: hsl(223, 47%, 23%);
+    --color05: hsl(224, 23%, 55%);
+    
+    --fontpadrão: 'Red Hat Display', sans-serif;
+}  
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--fontpadrão);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color02);
+    height: 100vh;
+
+}
+
+.main-container {
+    width: 60vh;
+    height: 95vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.box-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box-container {
+    padding: 1em;
+    text-align: center;
+}
+
+.box-title {
+    font-size: 24px;
+    margin-bottom: .7em;
+}
+
+.description-text {
+    font-weight: 700;
+    color: hsla(223, 47%, 23%, 0.596);
+}
+
+.subscription-box {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.288);
+    height: 12vh;
+    margin: 2em 0em;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.text-subscription {
+    margin-left: -3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.change-link:hover {
+    text-decoration: underline;
+}
+
+.lower-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+button {
+    background-color: var(--color03);
+    padding: 1.3em 0rem;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    height: 120%;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 30px var(--color05);
+    transition: all 300ms;
+}
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 0.822);
+}
+
+.cancel_button {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: 900;
+    font-size: 0.9em;
+}
+
+.cancel-link {
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.cancel-link:hover {
+   color: black;
+}
+
+
+a:active {
+    color: inherit;
+}
+
+
+@media screen and (height: 1000px) {
+    .main-container {
+        height: 78vh;
+    }
+
+    .box-container {
+        padding: 2em;
+    }
+
+    .subscription-box {
+        height: 10vh;
+    }
+
+    .icon-music {
+        height: 7vh;
+    }
+
+    .change-link {
+        font-size: 2vh;
+    }
+
+    .box-title {
+        font-size: 3vh;
+    }
+
+    .description-text {
+        font-size: 2.2vh;
+    }
+
+    .annualplan {
+        font-size: 2.2vh;
+    }
+
+
+    button {
+        font-size: 2vh;
+        height: 8vh;
+    }
+
+    .cancel-link {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (height: 820px) {
+    .main-container {
+        width: 90%;
+        height: 71%;
+    }
+
+    .box-container {
+
+    }
+    
+    .subscription-box {
+        height: 9vh;
+    }
+
+    .text-subscription {
+        margin-left: 0em;
+    }
+}
+
+/*Falta:
+ajeitar media queries -> tem que estudar isso
+}
+
+@media screen and (min-height: 1000px)
+.description-text {
+    font-size: 1.2em;
+}
+
+*/

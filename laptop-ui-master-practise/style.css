@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0% 10px;
+  margin: 0%;
+}
+
+* body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  font-weight: 400;
+  margin-left: -15px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4vw;
+  gap: 100px;
+  margin-right: 4vw;
+}
+
+.header__shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  position: absolute;
+  left: 55%;
+}
+
+img.laptop-img {
+  height: 100%;
+  -webkit-filter: drop-shadow(0px 5px 3px black);
+          filter: drop-shadow(0px 5px 3px black);
+  -webkit-animation: drop 1.5s ease;
+          animation: drop 1.5s ease;
+}
+
+.nav__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: 17%;
+  bottom: 5%;
+}
+
+.main__title {
+  font-size: 3.4vw;
+  font-weight: 500;
+  color: #434352;
+}
+
+.main__paragraph {
+  font-size: 1.7vw;
+  color: #585772;
+  margin-top: 5px;
+}
+
+.main__buttons {
+  padding: 50px 0px 0px 3.5%;
+}
+
+button {
+  font-size: 1.3vw;
+  height: 8vh;
+  width: 12vw;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 2.5vw;
+}
+
+.button__select {
+  background: transparent;
+  color: #c36cbb;
+  border: 2px solid #c36cbb;
+}
+
+.button__add {
+  background-color: #c36cbb;
+  border: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
